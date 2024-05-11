@@ -227,7 +227,7 @@ body {
 /*==========Feature Section============*/
 
 .feature-list {
-  gap: 60px;
+  gap: 30px;
 }
 
 .card-content {
@@ -335,8 +335,8 @@ body {
 
   .feature-card {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 
   .card-content {
@@ -363,7 +363,7 @@ body {
 
 /*========Responsive for devices more than 768px=====*/
 
-@media (min-width: 720px) {
+@media (min-width: 768px) {
   :root {
     --section-spacing: 80px;
   }
@@ -391,11 +391,15 @@ body {
   }
 
   .hero-content {
-    align-content: center;
+    padding-block: 60px;
   }
 
   .footer-wrapper {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .feature-card:nth-child(2) .card-content {
+    order: -1;
   }
 
   .footer-social-list {
